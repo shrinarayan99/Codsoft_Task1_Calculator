@@ -9,31 +9,33 @@
    
  </head> 
   <body>
-   <div class="result">
-    <input type="text" id="result" class="display" readonly>
+   <header class="header"><h2>Calculator</h2></header>
+   <div class="Calculator">
+    <input class="result" type="text" id="result" class="display" readonly>
+  
+        <div class="buttons">
+              <button onclick="clearResult()">CE</button>
+              <button onclick="deleteChar()">DEL</button>
+              <button onclick="appendToResult('%')">%</button>
+              <button onclick="appendToResult('/')">/</button>
+              <button onclick="appendToResult('1')">1</button>
+              <button onclick="appendToResult('2')">2</button>
+              <button onclick="appendToResult('3')">3</button>
+              <button onclick="appendToResult('*')">*</button>
+              <button onclick="appendToResult('4')">4</button>
+              <button onclick="appendToResult('5')">5</button>
+              <button onclick="appendToResult('6')">6</button>
+              <button onclick="appendToResult('+')">+</button>
+              <button onclick="appendToResult('7')">7</button>
+              <button onclick="appendToResult('8')">8</button>
+              <button onclick="appendToResult('9')">9</button>
+              <button onclick="appendToResult('-')">-</button>
+              <button onclick="appendToResult('.')">.</button>
+              <button onclick="appendToResult('0')">0</button>
+              <button onclick="appendToResult('00')">00</button>
+              <button onclick="calculateResult()">=</button>
+       </div>
    </div>
-    <div class="buttons">
-          <button onclick="clearResult()">CE</button>
-          <button onclick="deleteChar()">DEL</button>
-          <button onclick="appendToResult('%')">%</button>
-          <button onclick="appendToResult('/')">/</button>
-          <button onclick="appendToResult('1')">1</button>
-          <button onclick="appendToResult('2')">2</button>
-          <button onclick="appendToResult('3')">3</button>
-          <button onclick="appendToResult('*')">*</button>
-          <button onclick="appendToResult('4')">4</button>
-          <button onclick="appendToResult('5')">5</button>
-          <button onclick="appendToResult('6')">6</button>
-          <button onclick="appendToResult('+')">+</button>
-          <button onclick="appendToResult('7')">7</button>
-          <button onclick="appendToResult('8')">8</button>
-          <button onclick="appendToResult('9')">9</button>
-          <button onclick="appendToResult('-')">-</button>
-          <button onclick="appendToResult('.')">.</button>
-          <button onclick="appendToResult('0')">0</button>
-          <button onclick="appendToResult('00')">00</button>
-          <button onclick="calculateResult()">=</button>
-      </div>
    <script src=script.js></script>
   </body>
 </html>
